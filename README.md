@@ -11,6 +11,7 @@ To open a development environment on your web-browser click:
 Start rabbitmq on the workspace host, by running the command below (see [rabbitmq install instructions](https://www.rabbitmq.com/download.html) for more details):
 
 ```
+RABBITMQ_CONFIG_FILE=/workspace/learn-rabbitmq/rabbitmq.conf \
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management
 ```
 
