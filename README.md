@@ -15,3 +15,17 @@ RABBITMQ_CONFIG_FILE=/workspace/learn-rabbitmq/rabbitmq.conf \
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management
 ```
 
+# To build and run tutorials
+
+To build
+
+```
+mvn clean package
+```
+
+To run
+
+```
+java -jar target/learn*.jar
+```
+and follow the instructions output by it. For more details, refer [RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)
