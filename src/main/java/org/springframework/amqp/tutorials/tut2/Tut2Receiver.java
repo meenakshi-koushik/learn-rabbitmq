@@ -15,10 +15,13 @@ public class Tut2Receiver {
 
     @RabbitHandler
     public void receive(String in) throws InterruptedException {
+        
         StopWatch watch = new StopWatch();
         watch.start();
         System.out.println("instance " + this.instance +
             " [x] Received '" + in + "'");
+        if (true)
+            throw new RuntimeException();
         doWork(in);
         watch.stop();
         System.out.println("instance " + this.instance +
